@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paladar El Framboyán · tarjeta digital</title><meta name="description" content="Paladar · comida criolla en Holguín. Sabor criollo, como en casa."><meta name="theme-color" content="#B5452B">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--c:#B5452B;--c2:#F6E7D8;--ink:#2B1A12;--acc:#E8A33D;--f:Georgia, "Times New Roman", serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--c2);line-height:1.45}
+a{color:inherit}
+.muestra{position:fixed;top:10px;right:-34px;transform:rotate(45deg);background:#111;color:#fff;font:700 11px/1 var(--sans);letter-spacing:.14em;padding:6px 40px;z-index:50;opacity:.85}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:#111;color:#fff;padding:12px 16px;border-radius:12px;font-size:14px;max-width:min(92vw,380px);opacity:0;transition:.25s;pointer-events:none;z-index:60;text-align:center}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.cred{font-size:12px;opacity:.6;text-align:center;padding:22px 16px 30px}
+.cred a{text-decoration:none;border-bottom:1px solid currentColor}
+
+.wrap{max-width:440px;margin:0 auto;min-height:100vh;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.04)}
+.cover{height:150px;background:var(--c);position:relative;overflow:hidden}
+.cover:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.07) 0 14px,transparent 14px 28px)}
+.head{text-align:center;padding:0 20px 18px;margin-top:-52px;position:relative}
+.logo{display:block;margin:0 auto 10px;border-radius:50%;box-shadow:0 0 0 5px #fff}
+h1{font-family:var(--f);font-size:28px;line-height:1.1;letter-spacing:-.01em}
+.tipo{font-size:13px;text-transform:uppercase;letter-spacing:.12em;opacity:.65;margin-top:6px}
+.lema{font-family:var(--f);font-style:italic;font-size:17px;margin-top:8px}
+.estado{display:inline-flex;align-items:center;gap:7px;margin-top:12px;font-size:13px;padding:5px 12px;border-radius:99px;background:var(--c2)}
+.estado i{width:8px;height:8px;border-radius:50%;background:var(--acc)}
+.acc{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:4px 18px 8px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;border-radius:14px;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid var(--c);color:var(--c);background:#fff}
+.btn.p{background:var(--c);color:#fff}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.full{grid-column:1/-1}
+.info{padding:14px 22px 6px}
+.row{display:flex;gap:14px;padding:14px 0;border-top:1px solid rgba(0,0,0,.08)}
+.row svg{width:22px;height:22px;flex:none;color:var(--c);margin-top:1px}
+.row b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.1em;opacity:.55;font-weight:600;margin-bottom:2px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.chip{font-size:13px;padding:4px 10px;border-radius:99px;background:var(--c2)}
+</style></head>
+<body><div class="muestra">MUESTRA</div><main class="wrap">
+<div class="cover"></div>
+<header class="head"><svg class="logo" viewBox="0 0 100 100" width="88" height="88" aria-hidden="true"><circle cx="50" cy="50" r="48" fill="var(--c)"/><circle cx="50" cy="50" r="41" fill="none" stroke="var(--acc)" stroke-width="2"/><text x="50" y="62" text-anchor="middle" font-family="Georgia, &quot;Times New Roman&quot;, serif" font-weight="700" font-size="34" fill="#fff">EF</text></svg><h1>Paladar El Framboyán</h1><div class="tipo">Paladar · comida criolla</div><p class="lema">Sabor criollo, como en casa</p>
+<div class="estado"><i></i>Todos los días · 12:00 – 22:00</div></header>
+<nav class="acc">
+<a class="btn p full" href="#" data-demo="En la versión real, este botón abre el WhatsApp del negocio."><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></svg>Escribir por WhatsApp</a>
+<a class="btn" href="#" data-demo="En la versión real, este botón llama al negocio."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Llamar</a>
+<a class="btn" href="#" data-demo="En la versión real, abre el mapa con la ubicación exacta."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Cómo llegar</a>
+<a class="btn full" href="menu.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Ver el menú</a>
+</nav>
+<section class="info">
+<div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><b>Dirección</b>Calle Martí #000, Holguín</div></div>
+<div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Horario</b>Todos los días · 12:00 – 22:00</div></div>
+<div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.8 5.8 21l1.4-7L2 9.3l7-.8z"/></svg><div><b>Servicios</b><div class="chips"><span class="chip">Comer aquí</span><span class="chip">Para llevar</span><span class="chip">Domicilio en la ciudad</span></div></div></div>
+<div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><div><b>Formas de pago</b><div class="chips"><span class="chip">Efectivo</span><span class="chip">Transfermóvil</span><span class="chip">EnZona</span></div></div></div>
+</section>
+<nav class="acc" style="padding-top:10px">
+<button class="btn" id="vc" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M19 8v6M16 11h6"/></svg>Guardar contacto</button>
+<button class="btn" id="sh" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>Compartir</button>
+</nav>
+<p class="cred">Muestra de negocio ficticio · Hecho por <a href="https://wa.me/5355081288">Herramix</a></p>
+</main><div class="toast" id="toast" role="status"></div>
+<script>
+function toast(t){var x=document.getElementById('toast');x.textContent=t;x.classList.add('on');clearTimeout(window.__t);window.__t=setTimeout(function(){x.classList.remove('on')},2600);}
+document.addEventListener('click',function(ev){var a=ev.target.closest('[data-demo]');if(a){ev.preventDefault();toast(a.getAttribute('data-demo'));}});
+
+document.getElementById('vc').onclick=function(){var b=new Blob(["BEGIN:VCARD\r\nVERSION:3.0\r\nFN:Paladar El Framboy\u00e1n\r\nORG:Paladar El Framboy\u00e1n\r\nTEL;TYPE=CELL:+53 5XXX XXXX\r\nADR;TYPE=WORK:;;Calle Mart\u00ed #000, Holgu\u00edn;;;;Cuba\r\nNOTE:Sabor criollo, como en casa \u00b7 Todos los d\u00edas \u00b7 12:00 \u2013 22:00\r\nEND:VCARD"],{type:'text/vcard'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='framboyan.vcf';a.click();toast('Contacto descargado: ábrelo para guardarlo en el teléfono.');};
+document.getElementById('sh').onclick=function(){var d={title:"Paladar El Framboy\u00e1n",url:location.href};if(navigator.share){navigator.share(d).catch(function(){});}else{try{navigator.clipboard.writeText(location.href);toast('Enlace copiado. Pégalo en WhatsApp.');}catch(e){toast(location.href);}}};</script></body></html>
